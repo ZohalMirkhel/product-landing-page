@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>afghani Clothes</title>
+</head>
+<body onload="slider()">
+  <div class="banner">
+    <div class="slider">
+      <img src="https://nilicouture.com/cdn/shop/files/246897099_240989758051267_2445911747015895695_n_copie_1080x.jpg?v=1672016071" alt="Afghani Clothes"  id="SliderImg">
+    </div>
+    <div class="overlay">
+      <div class="navbar">
+        <div class="logo">
+          <img src="https://www.shutterstock.com/shutterstock/photos/2354140317/display_1500/stock-vector-girl-and-young-man-in-an-afghan-folk-costume-isolated-on-white-background-couple-of-young-people-2354140317.jpg" alt="">
+        </div>
+        <div class="menu-icons">
+          <i class='fas fa-user-circle'></i>
+          <i class="fa fa-shopping-cart"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="content">
+        <h1>AFGHANI CLOTHES</h1>
+        <h3>Experience the timeless elegance of Afghan craftsmanship with our exquisite collection of traditional clothing and accessories.</h3>
+        <div>
+          <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+          <input id="submit" type="submit" value="Get Started" class="btn"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var SliderImg = document.getElementById("SliderImg");
+
+    var images = new Array(
+      "https://nilicouture.com/cdn/shop/files/246897099_240989758051267_2445911747015895695_n_copie_1080x.jpg?v=1672016071",
+      "https://cdn10.bigcommerce.com/s-th713czu/products/3170/images/46920/ST132_4__79311.1524228166.1280.1280.JPG?c=2",
+      "https://aseelapp.com/media/catalog/category/aseel-alikozai-colthes-1005-4.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPvLRaaypovuvAOIYJeKEoLRnXCZSIldWqFaaynROmhWeX1syMLCOil85af3gsGUOVVqs&usqp=CAU",
+      "https://afghanaccessories.com/wp-content/uploads/2022/02/20211026_164452-scaled.jpg"
+    );
+    
+    var len = images.length;
+    var i = 0;
+
+    function slider(){
+      if(i > len-1){
+        i = 0;
+      }
+      SliderImg.src = images[i];
+      i++;
+      setTimeout('slider()', 5000);
+    }
+  </script>
+</body>
+</html>
