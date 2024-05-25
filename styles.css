@@ -8,40 +8,80 @@
     sans-serif;
 }
 
-.banner {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+.slides {
+  list-style: none;
+  margin-top: 0;
 }
 
-.slider {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  top: 0;
-}
-
-#SliderImg {
+.slides, .slides:after {
+  position: fixed;
   width: 100%;
   height: 100%;
-  animation: zoom 5s  linear infinite;
+  top: 0px;  
+  left: 0px;
+  z-index: 0;
 }
 
-@keyframes zoom {
-  0%{
-    transform: scale(1.3);
+.slides li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: animate 25s linear infinite 0s;
+}
+
+.slides li:nth-child(1) span {
+  background-image: url("https://nilicouture.com/cdn/shop/files/246897099_240989758051267_2445911747015895695_n_copie_1080x.jpg?v=1672016071");
+}
+
+.slides li:nth-child(2) span {
+  background-image: url("https://cdn10.bigcommerce.com/s-th713czu/products/3170/images/46920/ST132_4__79311.1524228166.1280.1280.JPG?c=2");
+  animation-delay: 5s;
+}
+
+.slides li:nth-child(3) span {
+  background-image: url("https://aseelapp.com/media/catalog/category/aseel-alikozai-colthes-1005-4.jpg");
+  animation-delay: 10s;
+}
+
+.slides li:nth-child(4) span {
+  background-image: url("https://i.pinimg.com/originals/9d/93/4d/9d934d73897b4fe1b28815fd662ce8b2.jpg");
+  animation-delay: 15s;
+}
+
+.slides li:nth-child(5) span {
+  background-image: url("https://afghanaccessories.com/wp-content/uploads/2022/02/20211026_164452-scaled.jpg");
+  animation-delay: 20s;
+}
+
+@keyframes animate {
+  0% {
+	opacity: 0;
   }
-  15%{
-    transform: scale(1);
+  8% {
+	opacity: 1;
+	transform: scale(1.05);
   }
-  85%{
-    transform: scale(1);
+  17% {
+	opacity: 1;
+	transform: scale(1.1);
   }
-  100%{
-    transform: scale(1.3);
+  25% {
+	opacity: 0;
+	transform: scale(1.1);
+  }
+  100% {
+	opacity: 0;
   }
 }
+
 .overlay {
   width: 100%;
   height: 100vh;
@@ -54,7 +94,7 @@
   width: 85%;
   display: flex;
   align-items: center;
-  margin: 35px auto;
+  margin: 20px auto;
 }
 
 .logo {
@@ -62,7 +102,7 @@
 }
 
 .logo img {
-  width: 80px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -117,12 +157,12 @@
 }
 
 #email {
-    border: 2px solid white;
-    background: transparent;
-    width: 600px;
-    border-radius: 25px;
-    padding: 15px 10px;
-    margin: 5px 10px;
-    font-weight: bold;
-    text-align: left;
+  border: 2px solid white;
+  background: transparent;
+  width: 600px;
+  border-radius: 25px;
+  padding: 15px 35px;
+  margin: 5px 10px;
+  font-weight: bold;
+  text-align: left;
 }
