@@ -11,12 +11,15 @@
 .slides {
   list-style: none;
   margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  height: 85vh;
 }
 
 .slides, .slides:after {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 85vh;
   top: 0px;  
   left: 0px;
   z-index: 0;
@@ -24,7 +27,7 @@
 
 .slides li span {
   width: 100%;
-  height: 100%;
+  height: 85vh;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -84,10 +87,12 @@
 
 .overlay {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: absolute;
   top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 #nav-bar {
@@ -143,7 +148,6 @@
 
 .brand-name {
   font-size: 12px;
-  color: #fff;
   font-style: italic;
   background: linear-gradient(to right, rgb(250, 112, 112) 20%, rgb(198, 235, 197) 50%, rgb(255, 118, 206) 70%, rgb(116, 105, 182) 100%);
   -webkit-background-clip: text;
@@ -155,7 +159,7 @@
   flex: 1;
   align-items: center;
   text-align: right;
-  padding-right: 70px;
+  padding-right: 90px;
 }
 
 .menu-icons i {
@@ -211,5 +215,59 @@
   margin: 5px 10px;
   font-weight: bold;
   text-align: left;
+  justify-content: center;
 }
 
+@media screen and (max-width: 500px) {
+  #email {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 0 -25px;
+  }
+
+  #submit {
+    width: 100px;
+  }
+
+  .content h3 {
+    width: 100%;
+    font-weight: 70;
+    line-height: 20px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+    color: #fe7250;
+  }
+
+  .content {
+    width: 80%;
+    margin: 140px auto 0;
+  }
+
+  .menu-icons i {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 15px;
+  }
+
+  #nav-bar {
+    height: 70px;
+  }
+  
+  #nav-bar ul {
+    gap: 10px;
+  }
+
+  .overlay {
+    height: 50vh;
+  }
+
+  .slides {
+    height: 50vh;
+  }
+}
