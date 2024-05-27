@@ -4,6 +4,12 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+header {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+}
+
 .slides {
   list-style: none;
   margin-top: 0;
@@ -12,8 +18,9 @@
   height: 85vh;
 }
 
-.slides, .slides:after {
-  position: fixed;
+.slides,
+.slides:after {
+  position: absolute;
   width: 100%;
   height: 85vh;
   top: 0px;  
@@ -86,6 +93,7 @@
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: absolute;
+  display: flex;
   top: 0;
   left: 0;
   z-index: 1;
@@ -100,7 +108,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -467,4 +475,63 @@
     width: 60%;
     font-size: 14px;
   }
+}
+
+#pricing {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.product .level {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.product ol li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.product .btn {
+  background-color: #fe7250;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product .btn:hover {
+  background-color: #d95e42;
 }
