@@ -4,6 +4,10 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -100,7 +104,7 @@ header {
 }
 
 #nav-bar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   color: #fff;
   height: 50px;
   padding: 10px;
@@ -279,6 +283,14 @@ header {
     padding: 10px 20px;
     margin: 10px 0;
   }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  .search-bar i{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -341,6 +353,14 @@ header {
     width: 180px;
     padding: 10px 20px;
     margin: 10px 0;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  .search-bar i{
+    display: none;
   }
 }
 
@@ -463,7 +483,7 @@ header {
 
   .content {
     width: 90%;
-    margin: 90px auto 20px;
+    margin: 130px auto 20px;
   }
 
   .content h1 {
@@ -489,7 +509,7 @@ header {
   }
 }
 
-#pricing {
+#trending {
   padding: 50px 0;
   text-align: center;
 }
@@ -510,6 +530,14 @@ header {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 0;
+}
+
+.product img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
 .product .level {
@@ -538,14 +566,16 @@ header {
   background-color: #fe7250;
   border: none;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 80px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .product .btn:hover {
-  background-color: #d95e42;
+  background-color: white;
+  border: 2px solid #d95e42;
+  color: black;
 }
 
 .search-bar {
