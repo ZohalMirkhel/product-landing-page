@@ -265,10 +265,6 @@ header {
     display: none;
   }
 
-  #nav-bar ul {
-    gap: 0px;
-  }
-
   .content {
     width: 90%;
     margin: 40px auto 0;
@@ -301,7 +297,7 @@ header {
     margin: 10px 0;
   }
 
-  .search-bar{
+  .search-bar {
     display: none;
   }
 }
@@ -326,7 +322,8 @@ header {
     font-size: 10px;
   }
 
-  .menu-icons, #nav-bar ul {
+  .menu-icons,
+  #nav-bar ul {
     display: none;
   }
 
@@ -647,7 +644,8 @@ header {
   height: 315px;
 }
 
-#history h2, #services h2 {
+#history h2,
+#services h2 {
   font-size: 32px;
   margin-bottom: 20px;
   color: #333;
@@ -658,7 +656,8 @@ header {
   font-family: 'Montserrat', sans-serif;
 }
 
-#history h2::before, #services h2::before {
+#history h2::before,
+#services h2::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -670,7 +669,8 @@ header {
   border-radius: 2px;
 }
 
-#history h2::after, #services h2::after {
+#history h2::after,
+#services h2::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -682,16 +682,6 @@ header {
   transform: translateX(-50%);
   opacity: 0.2;
   z-index: -1;
-}
-
-.history-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #666;
-}
-
-.history-video {
-  padding: 20px;
 }
 
 .services-container h2 {
