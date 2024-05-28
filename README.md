@@ -80,5 +80,3 @@ For any questions, feedback, or support, please contact me at:
 - LinkedIn: Still cannot access my LinkedIn account.
 - Email: [Zohal Mirkhel] zohalmirkhel@gmail.com
 - GitHub: [Zohal Mirkhel] https://github.com/ZohalMirkhel 
-
-We appreciate your interest in Afghani Clothes and look forward to providing you with the best experience of Afghan traditional clothing and accessories.
