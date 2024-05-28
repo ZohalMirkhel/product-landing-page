@@ -284,11 +284,7 @@ header {
     margin: 10px 0;
   }
 
-  .search-bar input[type="text"] {
-    width: 100%;
-  }
-
-  .search-bar i{
+  .search-bar{
     display: none;
   }
 }
@@ -353,10 +349,6 @@ header {
     width: 180px;
     padding: 10px 20px;
     margin: 10px 0;
-  }
-
-  .search-bar input[type="text"] {
-    width: 100%;
   }
 
   .search-bar i{
@@ -520,7 +512,7 @@ header {
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 80px;
+  padding: 20px 60px;
 }
 
 .product {
