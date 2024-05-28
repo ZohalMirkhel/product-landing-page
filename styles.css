@@ -644,6 +644,12 @@ header {
   height: 315px;
 }
 
+.services-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
 #history h2,
 #services h2 {
   font-size: 32px;
@@ -682,12 +688,6 @@ header {
   transform: translateX(-50%);
   opacity: 0.2;
   z-index: -1;
-}
-
-.services-container h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #333;
 }
 
 #services {
