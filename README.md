@@ -34,12 +34,13 @@ To set up this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/afghani-clothes.git
+   git clone https://github.com/your-username/product-landing-page.git
    ```
+   Make sure to replace your-username with your actual GitHub username when cloning the repository.
 
 2. **Navigate to the project directory**:
    ```bash
-   cd afghani-clothes
+   cd product-landing
    ```
 
 3. **Open the `index.html` file in your browser**:
