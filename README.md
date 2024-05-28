@@ -3,15 +3,6 @@
 
 Welcome to the **Afghani Clothes** website repository! This project showcases the timeless elegance of Afghan craftsMoreover, my aim was to make an e-commerce website dedicated to showcasing and selling traditional Afghan clothing and accessories. I wanted the website to focus on user experience, responsiveness, and aesthetics. The website is built using HTML and CSS, featuring responsive design elements and user-friendly navigation.
 
-## Table of Contents
-- [Features](#features)
-- [Live Demo](#live-demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Features
 
 - **Responsive Design**: The website is fully responsive, ensuring a seamless experience on any device.
